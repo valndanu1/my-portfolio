@@ -3,11 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Valerie's Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Portfolio</h1>
+  <div class="page-title">Welcome to My Portfolio</div>
+
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li><a onclick="showSection('home')">Home</a></li>
+        <li><a onclick="showSection('profile')">About Me</a></li>
+        <li><a onclick="showSection('skills')">Skills</a></li>
+        <li><a onclick="showSection('coursework')">Coursework</a></li>
+        <li><a onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section id="home" class="section active">
+    <h2>Home</h2>
+    <p><i>Hi, I'm Valerie</i></p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p>Showcase your work here.</p>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <p>Basic SQL<br>GitHub (repositories)<br>Command Line (CLI)<br>VS Code</p>
+  </section>
+
+  <section id="coursework" class="section">
+    <h2>Coursework</h2>
+    <p>Database Management<br>Data Structures and Algorithms<br>Object-Oriented Programming<br>Computer Security</p>
+  </section>
+
+  <section id="profile" class="section">
+    <h2>About Me</h2>
+    <div class="profile-container">
+      <img src="valerie.jpg" alt="Valerie Ndanu" class="profile-pic" />
+      <div class="profile-text">
+        <p>IT student & aspiring Web Developer.</p>
+        <p>I build clean, performant websites with HTML, CSS, and JavaScript, focused on intuitive user experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Let's connect—feel free to reach out!</p>
+    <ul>
+      <li><i class="fas fa-envelope"></i> <a href="mailto:valeriendanu8@gmail.com">valeriendanu8@gmail.com</a></li>
+      <li><i class="fas fa-phone"></i> <a href="tel:+254716258776">+254 716 258 776</a></li>
+      <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/valerie-ndanu" target="_blank">Valerie Ndanu</a></li>
+      <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/valeriendanumutulu" target="_blank">@valeriendanumutulu</a></li>
+      <li><i class="fab fa-telegram"></i> <a href="https://t.me/ValerieNdanu" target="_blank">@ValerieNdanu</a></li>
+      <li><i class="fab fa-github"></i> <a href="https://github.com/valndanu1" target="_blank">valndanu1</a></li>
+      <li><i class="fas fa-id-badge"></i> <a href="https://assess.co.ke/valerie-ndanu" target="_blank">View My Profile</a></li>
+    </ul>
+  </section>
+
+  <!-- Link to external JS -->
   <script src="script.js"></script>
 </body>
 </html>
