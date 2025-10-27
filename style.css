@@ -1,0 +1,92 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #cceee5; /* Pale blue-green */
+  color: black; /* Dark text for readability */
+}
+
+/* Page title block */
+.page-title {
+  background-color: white;
+  color: orange;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(135, 206, 235, 0.6); /* Sky blue shadow */
+}
+
+/* Navigation bar */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  color: pink;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+  color: #ff69b4; /* Hot pink on hover */
+}
+
+/* Active tab */
+.navbar ul li a.active {
+  color: #9c27b0; /* Purple when active */
+}
+
+/* Section visibility */
+.section {
+  display: none;
+  padding: 2rem;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Home section paragraph */
+#home p i {
+  color: #32cd32;
+  font-style: italic;
+}
+
+/* Contact icons glow effect */
+#contact ul li i {
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Individual glow colors */
+#contact ul li:nth-child(1) i { color: #00ffff; text-shadow: 0 0 8px #00ffff; }
+#contact ul li:nth-child(2) i { color: #ff69b4; text-shadow: 0 0 8px #ff69b4; }
+#contact ul li:nth-child(3) i { color: #0077b5; text-shadow: 0 0 8px #0077b5; }
+#contact ul li:nth-child(4) i { color: #e1306c; text-shadow: 0 0 8px #e1306c; }
+#contact ul li:nth-child(5) i { color: #0088cc; text-shadow: 0 0 8px #0088cc; }
+#contact ul li:nth-child(6) i { color: #ffffff; text-shadow: 0 0 8px #ffffff; }
+#contact ul li:nth-child(7) i { color: #ffa500; text-shadow: 0 0 8px #ffa500; }
+
+/* Contact links */
+#contact ul li a {
+  color: #00aaff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact ul li a:hover {
+  color: #ffaa00;
+}
